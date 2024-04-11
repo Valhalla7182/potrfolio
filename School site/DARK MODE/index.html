@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="theme" rel="stylesheet" href="light.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Click to switch</h1>
+        <button id="switchMode">Switch</button>
+    </div>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit a doloremque, consectetur cum expedita illum quis officiis soluta nisi, cupiditate inventore asperiores similique ea architecto odit laborum pariatur, fuga eveniet.
+    <script>
+        let switchMode = document.getElementById("switchMode");
+
+        switchMode.onclick = function() {
+            let theme = document.getElementById("theme");
+
+            if(theme.getAttribute("href") == "light.css") {
+                theme.href = "dark.css";
+            } else {
+                theme.href = "light.css";
+            }
+        }
+    </script>
+</body>
+</html>
