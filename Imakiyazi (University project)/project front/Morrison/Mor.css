@@ -1,0 +1,13 @@
+body {
+    line-height: 35px;
+}
+#four {
+    /*opacity: 0;*/
+    display: none;
+}
+#display {
+    width: 50%;
+}
+.column {
+    display: none;
+}

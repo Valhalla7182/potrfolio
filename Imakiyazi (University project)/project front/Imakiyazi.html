@@ -1,0 +1,226 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="Imakiyazi.css" type="text/css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet/less" type="text/css" href="Imakiyazi.less" />
+   <script src="//cdn.jsdelivr.net/npm/less" ></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=636dbf3e-93bc-484d-a8d5-84c9ade1c77c&lang=en_US"
+    type="text/javascript"></script>
+</head>
+
+
+<body>
+    <div class="header">
+        <img onclick="window.location.reload()" id="logotip" src="https://sun9-70.userapi.com/impg/E_cOfDNjVBAU62dZ4ouwN40vXQVKrwBJgPVhfA/SGXy4onwqzs.jpg?size=500x500&quality=96&proxy=1&sign=9017b8c34ea68f8a8aebe994a042e944" alt="logo Imakiyazi">
+        
+        <div id="creative" onclick="change()">Творчество</div>
+        <div id="team" onclick="slide()">Наша команда</div>
+        <div id="feedback" onclick="connect()">Связаться</div>
+        <div id="about" onclick="about()">О нас</div>
+    </div>
+    
+    <div class="ourt">
+    <div id="vkadre" onclick="showteam()">В кадре</div>
+    <div id="zakadrom" onclick="zakadrom()">За кадром</div>
+    </div>
+    
+    <div id="block1">
+    <div class="text1">
+        <img id="fon1" src="https://sun9-44.userapi.com/impg/mI8HymOG5l2HHSlheqMZJ5LvKZSTyU03KJyKRA/eXWnXLQg3ww.jpg?size=1280x720&quality=96&proxy=1&sign=dabaff88180e3bd5ec78bc7c4a9987eb" alt="1 foto">
+        <h1> Ну привет, дружище</h1>
+        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Repellat excepturi nam, ipsam eum autem labore culpa fugit adipisci neque non
+             laudantium voluptas voluptates sunt consectetur dolore aut voluptatum magni quidem.</p>
+    </div>
+    </div>
+
+    <div id="block2">
+    <div class="text2">
+        <img id="fon2" src="https://sun9-45.userapi.com/impg/h0zCOpb-dFDW10buj2usvbDxtsVfdQy1I7qzXA/jTlF0HUW0IM.jpg?size=789x526&quality=96&proxy=1&sign=62fc786529e016d866071ba8711a67db" alt="2 fotka">
+        <h1> Какой то текст</h1>
+        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            Repellat excepturi nam, ipsam eum autem labore culpa fugit adipisci neque non
+             laudantium voluptas voluptates sunt consectetur dolore aut voluptatum magni quidem.</p>
+        </div>  
+    </div>
+
+<div id="block3">
+    <div class="help">
+        <h1 align = "center">Мы всегда хорошо относились к критике, поэтому, ниже мы принимаем пожелания и недочеты</h1>
+        <p id="name">Введите Ваше имя
+            (необязательно):
+        </p>
+        <input type="text" name="kto_otpr" id="imya">
+        <p id="message">Ваше сообщение:</p>
+        <textarea type="text" name="letter" id="critic" maxlength="900"></textarea>
+        <button id="otpr" onclick="send()">Отправить</button>
+        <a id="sended">Your message was sended!</a>
+    </div>
+</div>
+
+<div class="tv" >
+    <div id="tv1">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/WApRbCCP0TI" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+    </div>
+<p id="vyp1">ИМАКИЯЗИ / Imakiyazi / 1 ВЫПУСК</p>
+<p id="text1"> Пилотный выпуск шоу IMAKIYAZI, где мы
+    вложили частичку своей души. Да, все совершают ошибки, поэтому
+    просим Вас оценивать по максимальной строгости
+</p>
+<p id="text1">Приятного просмотра:)</p>
+</div>
+
+<div class="tv2" >
+    <div id="tv_2">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/d3LNjUA80Kk" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+      </iframe>
+    </div>
+<p id="vyp2">ИМАКИЯЗИ / Imakiyazi / 2 ВЫПУСК</p>
+<p id="text2"> Месяц еще одной кропотливой работы, и вот он,
+    второй выпуск! Начало проекта, пробуем всё новое, эксперементируем.
+</p>
+<p id="text2">Приятного просмотра:)</p>
+</div>
+    <div class="row">
+        <div class="column">
+          <div class="content">
+            <img src="https://www.film.ru/sites/default/files/people/1456207-1120105.jpg" alt="Mountains" style="width:100%; margin: 0 auto">
+            <h3>Главный актер 1</h3>
+            <p>Lorem ipsum..</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="https://i.pinimg.com/originals/e3/1c/e3/e31ce37a4046a0cc9119a5c96ef5b2b9.jpg" alt="Lights" style="width:100%">
+            <h3>Главный актер 2</h3>
+            <p>Lorem ipsum..</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="https://www.rbc.ua/static/ckef/img/1_3954.jpg" alt="Nature" style="width:100%">
+            <h3>Главный актер 3</h3>
+            <p>Lorem ipsum..</p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <img src="https://www.condenast.ru/upload/iblock/69d/7d6e6bd6afd62212ecd0186bcb25cb79.jpg" alt="Mountains" style="width:100%">
+            <h3>Главный актер 4</h3>
+            <p>Lorem ipsum..</p>
+          </div>
+        </div>
+      </div>
+      <img src="E:\imakiyazi\fotki\Aidar.jpg" alt="">
+      <div class="ryad2">
+        <div class="zakadr">
+          <div class="card">
+            <img src="https://24smi.org/public/media/celebrity/2019/05/22/rvubao4eqrb2-kristofer-nolan.png" alt="Mountains" style="width:100%; margin: 0 auto">
+            <h3>Оператор</h3>
+            <p>Lorem ipsum..</p>
+          </div>
+          <p class="neartext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo voluptate asperiores itaque, similique tempore ipsum nihil assumenda magni quaerat omnis. Sit nihil tempora cumque inventore eum sed! Explicabo, tenetur ratione. </p>
+        </div>
+        <div class="zakadr">
+          <div class="card">
+            <img src="https://image.freepik.com/free-photo/cheerful-creative-man_1098-18446.jpg" alt="Lights" style="width:100%">
+            <h3>Монтажер</h3>
+            <p>Lorem ipsum..</p>
+          </div>
+          <p class="neartext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti cumque saepe aut eaque ab possimus modi, quis voluptate, labore repellat praesentium. Veritatis nemo id ad vitae eveniet ducimus, numquam quo.</p>
+        </div>
+      </div>
+      
+      <div class="karta">
+        
+        <div id="map"></div>
+        <div class="location">
+        <div class="description"> Мы находимся в этих точках. Для подробной информации:</div><br>
+        <div class="description"><ul>
+            <li><img src="https://pngimg.com/uploads/instagram/instagram_PNG7.png" alt="inst" style="width: 3%;">
+            : @Imakiyazi</li>
+            <li>Сотрудничество: imakiyazi@gmail.com</li>
+            <li>Donate)) : 1234 5678 9012 3456</li>
+        </ul></div>
+    </div>
+    </div>
+        
+        <div class="imak">
+            <div class="onas">
+                <div class="pronas">
+                  <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                </div>
+                <div class="pronas">
+                  <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                </div>
+                <div class="pronas">
+                  <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                </div>
+                <div class="pronas">
+                  <img src="https://www.w3schools.com/howto/img_lights_wide.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                </div>
+              </div>
+              
+              <!-- The Modal/Lightbox -->
+              <div id="myModal" class="modal">
+                <span class="close cursor" onclick="closeModal()">&times;</span>
+                <div class="modal-content">
+              
+                  <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" style="width:100%">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%">
+                  </div>
+              
+                  <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="https://www.w3schools.com/howto/img_lights_wide.jpg" style="width:100%">
+                  </div>
+              
+                  <!-- Next/previous controls -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              
+                  <div class="caption-container">
+                    <p id="caption"></p>
+                  </div>
+              
+                  <div class="pronas">
+                    <img class="demo" src="https://www.w3schools.com/howto/img_nature_wide.jpg" onclick="currentSlide(1)" alt="Nature">
+                  </div>
+              
+                  <div class="pronas">
+                    <img class="demo" src="https://www.w3schools.com/howto/img_snow_wide.jpg" onclick="currentSlide(2)" alt="Snow">
+                  </div>
+              
+                  <div class="pronas">
+                    <img class="demo" src="https://www.w3schools.com/howto/img_mountains_wide.jpg" onclick="currentSlide(3)" alt="Mountains">
+                  </div>
+              
+                  <div class="pronas">
+                    <img class="demo" src="https://www.w3schools.com/howto/img_lights_wide.jpg" onclick="currentSlide(4)" alt="Lights">
+                  </div>
+                </div>
+              </div>
+        </div>
+        <script type="text/javascript" src="Imakiyazi.js"></script>
+</body>
+</html>
+                                                          
